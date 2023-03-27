@@ -1,6 +1,6 @@
 <template>
   <NuxtLayout>
-    <RacingLeaderboard />
+    <RacingLeaderboard :data="racingData" />
   </NuxtLayout>
 </template>
 
@@ -22,6 +22,9 @@ const { documents } = await database.listDocuments(
   config.database,
   config.collection
 );
+
+// Add racing data to state
+const { value: racingData } = useState('racingData', () => sortData(documents));
 </script>
 
 <style>

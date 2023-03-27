@@ -1,0 +1,19 @@
+{
+  "name": "nuxt-app",
+  "private": true,
+  "scripts": {
+    "build": "nuxt build",
+    "dev": "nuxt dev",
+    "generate": "nuxt generate",
+    "preview": "nuxt preview",
+    "postinstall": "nuxt prepare"
+  },
+  "devDependencies": {
+    "@types/node": "^18.15.9",
+    "nuxt": "^3.3.2"
+  },
+  "dependencies": {
+    "@appwrite.io/pink": "^0.0.6-rc.4",
+    "nuxt-appwrite": "^1.0.3"
+  }
+}

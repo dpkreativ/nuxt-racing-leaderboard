@@ -25,6 +25,18 @@ const { documents } = await database.listDocuments(
 
 // Add racing data to state
 const { value: racingData } = useState('racingData', () => sortData(documents));
+
+// Subscribe to realtime updates from the database
+onMounted(() => {
+  try {
+    client.subscribe(
+      `databases.${config.database}.collections.${config.collection}.documents`,
+      (res) => updateState(racingData, res.payload)
+    );
+  } catch (error) {
+    console.log(error);
+  }
+});
 </script>
 
 <style>

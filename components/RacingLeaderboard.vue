@@ -30,6 +30,7 @@
           :car-number="racer.carNumber"
           :driver="racer.driver"
           :duration="formatDuration(racer.duration)"
+          :document-id="racer.$id"
         />
       </tbody>
     </table>

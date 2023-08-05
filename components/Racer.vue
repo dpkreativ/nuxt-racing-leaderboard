@@ -34,18 +34,8 @@
           <!-- Modal form content -->
           <div class="modal-content">
             <input type="number" name="hours" id="hours" placeholder="hours" />
-            <input
-              type="number"
-              name="minutes"
-              id="minutes"
-              placeholder="minutes"
-            />
-            <input
-              type="number"
-              name="seconds"
-              id="seconds"
-              placeholder="seconds"
-            />
+            <input type="number" name="mins" id="mins" placeholder="minutes" />
+            <input type="number" name="secs" id="secs" placeholder="seconds" />
           </div>
 
           <!-- Modal form footer -->
